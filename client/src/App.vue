@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1> Hello room </h1>
     <bookings-list></bookings-list>
     <booking-form></booking-form>
   </div>
