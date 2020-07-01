@@ -1,29 +1,32 @@
-<mxfile host="" modified="2020-07-01T09:26:44.858Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.46.1 Chrome/78.0.3904.130 Electron/7.3.1 Safari/537.36" etag="8Wym8zFOGzIoS94BGGkC" version="13.1.3">
+<mxfile host="" modified="2020-07-01T12:22:08.937Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.46.1 Chrome/78.0.3904.130 Electron/7.3.1 Safari/537.36" etag="ihBylhO7HkGLd3_IyKdY" version="13.1.3">
     <diagram id="6hGFLwfOUW9BJ-s0fimq" name="Page-1">
-        <mxGraphModel dx="984" dy="3172" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+        <mxGraphModel dx="1442" dy="3082" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="4">
+                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2" target="5">
+                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="App.vue&lt;br&gt;&lt;br&gt;Data:&lt;br&gt;Import:&lt;br&gt;Components:&lt;br&gt;EventBus:&lt;br&gt;Methods:&lt;br&gt;Computed:" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="2" value="App.vue&lt;br&gt;&lt;br&gt;Data: N/A&lt;br&gt;Import: BookingsList, BookingsForm&lt;br&gt;Components: bookings-list, bookings-form&lt;br&gt;&lt;br&gt;Methods: N/A&lt;br&gt;Computed: N/A" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="560" y="730" width="310" height="290" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="6">
+                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="4" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="BookingsList.vue&lt;br&gt;&lt;br&gt;Data:&lt;br&gt;Import:&lt;br&gt;Components:&lt;br&gt;EventBus:&lt;br&gt;Methods:&lt;br&gt;Computed:" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="4" value="BookingsList.vue&lt;br&gt;&lt;br&gt;Data: bookings&lt;br&gt;Import: eventBus, BookingsService, BookingItem&lt;br&gt;Components: booking-item&lt;br&gt;Mounted: getBookings, $on.booking-added, $on.booking-deleted&lt;br&gt;Methods:&amp;nbsp; n/a&lt;br&gt;Computed: n/a" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="340" width="310" height="290" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="BookingForm.vue&lt;br&gt;&lt;br&gt;Data:&lt;br&gt;Import:&lt;br&gt;Components:&lt;br&gt;EventBus:&lt;br&gt;Methods:&lt;br&gt;Computed:" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="5" value="BookingForm.vue&lt;br&gt;&lt;br&gt;Data: name email, booked?&lt;br&gt;Import: eventBus, BookingsService&lt;br&gt;Components:&amp;nbsp;&lt;br&gt;EventBus: $emit newBooking&lt;br&gt;Methods: handleSubmit(BookingService stuff, $emit)&lt;br&gt;Computed:&lt;br&gt;mounted:&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="880" y="350" width="310" height="290" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="BookingItem.vue&lt;br&gt;&lt;br&gt;Data:&lt;br&gt;Import:&lt;br&gt;Components:&lt;br&gt;EventBus:&lt;br&gt;Methods:&lt;br&gt;Computed:" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="6" value="BookingItem.vue&lt;br&gt;&lt;br&gt;Data: n/a&lt;br&gt;props: ['booking']&lt;br&gt;Import: eventBus, BookingsService&lt;br&gt;Components: n/a&lt;br&gt;EventBus:n/a&lt;br&gt;Methods: $emit bookingDelete&lt;br&gt;Computed: n/a" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="-20" width="310" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="bookings_service.js&lt;br&gt;C&lt;br&gt;R&lt;br&gt;D" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1310" y="70" width="310" height="230" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
