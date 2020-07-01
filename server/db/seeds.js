@@ -5,7 +5,7 @@ db.bookings.insertMany([
     {
         name: "Harrison Booth",
         email: "harrison@codeclan.com",
-        isCheckedIn: true
+        isCheckedIn: false
 
     },
     {
@@ -22,4 +22,4 @@ db.bookings.insertMany([
         email: "louise@codeclan.com",
         isCheckedIn: true
     }
-])
+]);
