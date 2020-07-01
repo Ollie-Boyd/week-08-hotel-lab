@@ -1,7 +1,7 @@
 <template>
-    <ul>
-        <li v-for=" (booking, index) in bookings" :key = "index">{{booking.name}}</li>
-    </ul>
+  <div>
+      <booking-item v-for="(booking, index) in bookings" v-bind:booking="booking" :key="index"></booking-item>
+  </div>
   
 </template>
 
@@ -31,7 +31,7 @@ export default {
         
     },
     components: {
-
+        'booking-item': BookingItem
     }
 
 
